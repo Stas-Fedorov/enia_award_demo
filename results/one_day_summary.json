@@ -1,0 +1,17 @@
+{
+  "total_timesteps": 96,
+  "baseline_stable_timesteps": 94,
+  "controlled_stable_timesteps": 96,
+  "baseline_avg_charging_kw": 41.7368736875,
+  "controlled_avg_charging_kw": 41.50770702083333,
+  "curtailment_avg_kw": 0.22916666666666666,
+  "intervention_timesteps": [
+    32,
+    33
+  ],
+  "baseline_min_voltage": 0.95911,
+  "controlled_min_voltage": 0.962113,
+  "baseline_max_loading": 110.409943,
+  "controlled_max_loading": 96.658453,
+  "generated_at": "2026-09-06T19:48:14.884038Z"
+}

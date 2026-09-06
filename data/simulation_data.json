@@ -1,0 +1,193 @@
+{
+    "verifica": false,
+    
+    "network_name": "Fforchneol Farm Godreaman",
+    "n_utenti":14,
+    "input_excel_name":"Input L_G.xlsx",
+    "ricarica_excel_name": "Ricarica_EV.xlsx",
+    
+    "time_resolution": 96,
+    "time_conversion_factor": 0.25,
+    "P_col": 0.022,
+    "n_col_des": 30,
+
+    "random_shading_min_simulations": 10,
+    "random_shading_max_simulations": 500,
+    "random_shading_seed": 42,
+    "V_base": 11,
+    "volt": 0.415,
+    "col_max_per_bus": 3,
+
+    "Criteri": ["Best_DV_media", "Best_DV_mass", "Best_Perdite", "Best_dev_std", "Best_cab_ene", "Best_total"],
+    "scelta": "Best_cab_ene",
+    "Flusso_inv": false,
+    "Limite": ["No_E_agg", "E_agg 10 %", "E_agg 20 %", "E_agg 50 %", "E_agg 100 %", "E_agg_non_vincolata"],
+    "scelta_2": "E_agg_non_vincolata",
+
+    "con": true,
+    "con_graf": false,
+    "con_fin": false,
+    "gr_fig" : false,
+    "gr_n": 0,
+
+    "bus_cat": {
+        "aa": "sjt",
+        "ab": "bjt",
+        "ac": "le",
+        "ad": "ldb",
+        "ae": "cutout",
+        "af": "dummy",
+        "ag": "fp",
+        "ah": "tr",
+        "ai": "pole"
+    },
+    "bus_data": [
+        {"name": "Bus Monte MT", "type": "b", "v_nom": 11, "cat": "ah"},
+        {"name": "Bus Valle BT", "type": "b", "v_nom": 0.4, "cat": "ah"},
+        {"name": "Bus 2", "type": "n", "v_nom": 0.4, "cat": "ab"},
+        {"name": "Bus 3", "type": "n", "v_nom": 0.4, "cat": "ab"},
+        {"name": "Bus 4", "type": "n", "v_nom": 0.4, "cat": "ai"},
+        {"name": "Bus 5", "type": "n", "v_nom": 0.4, "cat": "ai"},
+        {"name": "Bus 6", "type": "n", "v_nom": 0.4, "cat": "ai"},
+        {"name": "Bus 7", "type": "n", "v_nom": 0.4, "cat": "ab"},
+        {"name": "Bus 8", "type": "n", "v_nom": 0.4, "cat": "ac"},
+        {"name": "Bus 9", "type": "n", "v_nom": 0.4, "cat": "ab"},
+        {"name": "Bus 10", "type": "n", "v_nom": 0.4, "cat": "ac"},
+        {"name": "Bus 11", "type": "n", "v_nom": 0.4, "cat": "ac"},
+        {"name": "Bus 12", "type": "n", "v_nom": 0.4, "cat": "aa"},
+        {"name": "Bus 13", "type": "n", "v_nom": 0.4, "cat": "aa"},
+        {"name": "Bus 14", "type": "n", "v_nom": 0.4, "cat": "ab"},
+        {"name": "Bus 15", "type": "n", "v_nom": 0.4, "cat": "ac"},
+        {"name": "Bus 16", "type": "n", "v_nom": 0.4, "cat": "ab"},
+        {"name": "Bus 17", "type": "n", "v_nom": 0.4, "cat": "ac"},
+        {"name": "Bus 18", "type": "n", "v_nom": 0.4, "cat": "ac"},
+        {"name": "Bus 19", "type": "n", "v_nom": 0.4, "cat": "ai"},
+        {"name": "Bus 20", "type": "n", "v_nom": 0.4, "cat": "aa"},
+        {"name": "Bus 21", "type": "n", "v_nom": 0.4, "cat": "aa"}
+    ],
+
+    "ini_dor": [2],
+    "fin_dor": [21],
+    "v_min": 0.9,
+    "v_max": 1.1,
+    "load_max": 100,
+
+        "load_data": [
+        {"bus_index": 2, "name": "Bus 2 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": true},
+        {"bus_index": 3, "name": "Bus 3 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": false},
+        {"bus_index": 4, "name": "Bus 4 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": false},
+        {"bus_index": 5, "name": "Bus 5 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": false},
+        {"bus_index": 6, "name": "Bus 6 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": false},
+        {"bus_index": 7, "name": "Bus 7 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": false},
+        {"bus_index": 8, "name": "Bus 8 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": false},
+        {"bus_index": 9, "name": "Bus 9 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": true},
+        {"bus_index": 10, "name": "Bus 10 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": false},
+        {"bus_index": 11, "name": "Bus 11 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": false},
+        {"bus_index": 12, "name": "Bus 12 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": false},
+        {"bus_index": 13, "name": "Bus 13 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": false},
+        {"bus_index": 14, "name": "Bus 14 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": false},
+        {"bus_index": 15, "name": "Bus 15 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": false},
+        {"bus_index": 16, "name": "Bus 16 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": true},
+        {"bus_index": 17, "name": "Bus 17 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": false},
+        {"bus_index": 18, "name": "Bus 18 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": true},
+        {"bus_index": 19, "name": "Bus 19 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": false},
+        {"bus_index": 20, "name": "Bus 20 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": true},
+        {"bus_index": 21, "name": "Bus 21 load", "p_mw": 0.0, "q_mvar": 0.0, "empty": true}
+    ],
+
+        "sgen_data": [
+        {"bus_index": 2, "name": "Bus 2 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": true},
+        {"bus_index": 3, "name": "Bus 3 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": false},
+        {"bus_index": 4, "name": "Bus 4 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": false},
+        {"bus_index": 5, "name": "Bus 5 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": false},
+        {"bus_index": 6, "name": "Bus 6 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": false},
+        {"bus_index": 7, "name": "Bus 7 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": false},
+        {"bus_index": 8, "name": "Bus 8 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": false},
+        {"bus_index": 9, "name": "Bus 9 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": true},
+        {"bus_index": 10, "name": "Bus 10 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": false},
+        {"bus_index": 11, "name": "Bus 11 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": false},
+        {"bus_index": 12, "name": "Bus 12 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": false},
+        {"bus_index": 13, "name": "Bus 13 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": false},
+        {"bus_index": 14, "name": "Bus 14 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": false},
+        {"bus_index": 15, "name": "Bus 15 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": false},
+        {"bus_index": 16, "name": "Bus 16 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": true},
+        {"bus_index": 17, "name": "Bus 17 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": false},
+        {"bus_index": 18, "name": "Bus 18 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": true},
+        {"bus_index": 19, "name": "Bus 19 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": false},
+        {"bus_index": 20, "name": "Bus 20 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": true},
+        {"bus_index": 21, "name": "Bus 21 generator", "p_mw": 0.0, "q_mvar": 0.0, "control": "PQ", "empty": true}
+    ],
+
+
+    "line_type": {
+        "a": [0.1, 0.0725, 0.496],
+        "b": [0.443, 0.0755, 0.203],
+        "c": [0.868, 0.086, 0.12],
+        "d": [0.541, 0.297, 0.159]
+    },
+
+        "line_data": [
+        {"from_bus": 0, "to_bus": 1, "length_km": 0.001, "r_ohm_per_km": 0.0001, "x_ohm_per_km": 0.0001, "c_nf_per_km": 0, "max_i_ka": 5, "name": "Linea 21"},
+        {"from_bus": 1, "to_bus": 2, "length_km": 0.021782, "r_ohm_per_km": 0.1, "x_ohm_per_km": 0.0725, "c_nf_per_km": 0, "max_i_ka": 0.496, "name": "Linea 1"},
+        {"from_bus": 2, "to_bus": 7, "length_km": 0.02793, "r_ohm_per_km": 0.443, "x_ohm_per_km": 0.0755, "c_nf_per_km": 0, "max_i_ka": 0.203, "name": "Linea 2"},
+        {"from_bus": 7, "to_bus": 8, "length_km": 0.040577, "r_ohm_per_km": 0.443, "x_ohm_per_km": 0.0755, "c_nf_per_km": 0, "max_i_ka": 0.203, "name": "Linea 3"},
+        {"from_bus": 7, "to_bus": 9, "length_km": 0.014733, "r_ohm_per_km": 0.443, "x_ohm_per_km": 0.0755, "c_nf_per_km": 0, "max_i_ka": 0.203, "name": "Linea 4"},
+        {"from_bus": 9, "to_bus": 10, "length_km": 0.00328, "r_ohm_per_km": 0.443, "x_ohm_per_km": 0.0755, "c_nf_per_km": 0, "max_i_ka": 0.203, "name": "Linea 5"},
+        {"from_bus": 9, "to_bus": 11, "length_km": 0.044375, "r_ohm_per_km": 0.443, "x_ohm_per_km": 0.0755, "c_nf_per_km": 0, "max_i_ka": 0.203, "name": "Linea 6"},
+        {"from_bus": 2, "to_bus": 3, "length_km": 0.007025, "r_ohm_per_km": 0.1, "x_ohm_per_km": 0.0725, "c_nf_per_km": 0, "max_i_ka": 0.496, "name": "Linea 7"},
+        {"from_bus": 3, "to_bus": 12, "length_km": 0.013543, "r_ohm_per_km": 0.1, "x_ohm_per_km": 0.0725, "c_nf_per_km": 0, "max_i_ka": 0.496, "name": "Linea 8"},
+        {"from_bus": 12, "to_bus": 13, "length_km": 0.025612, "r_ohm_per_km": 0.1, "x_ohm_per_km": 0.0725, "c_nf_per_km": 0, "max_i_ka": 0.496, "name": "Linea 9"},
+        {"from_bus": 13, "to_bus": 14, "length_km": 0.032815, "r_ohm_per_km": 0.443, "x_ohm_per_km": 0.0755, "c_nf_per_km": 0, "max_i_ka": 0.203, "name": "Linea 10"},
+        {"from_bus": 14, "to_bus": 15, "length_km": 0.060274, "r_ohm_per_km": 0.443, "x_ohm_per_km": 0.0755, "c_nf_per_km": 0, "max_i_ka": 0.203, "name": "Linea 11"},
+        {"from_bus": 14, "to_bus": 16, "length_km": 0.007964, "r_ohm_per_km": 0.443, "x_ohm_per_km": 0.0755, "c_nf_per_km": 0, "max_i_ka": 0.203, "name": "Linea 12"},
+        {"from_bus": 16, "to_bus": 18, "length_km": 0.001659, "r_ohm_per_km": 0.443, "x_ohm_per_km": 0.0755, "c_nf_per_km": 0, "max_i_ka": 0.203, "name": "Linea 13"},
+        {"from_bus": 16, "to_bus": 17, "length_km": 0.025739, "r_ohm_per_km": 0.443, "x_ohm_per_km": 0.0755, "c_nf_per_km": 0, "max_i_ka": 0.203, "name": "Linea 14"},
+        {"from_bus": 3, "to_bus": 20, "length_km": 0.048895, "r_ohm_per_km": 0.1, "x_ohm_per_km": 0.0725, "c_nf_per_km": 0, "max_i_ka": 0.496, "name": "Linea 15"},
+        {"from_bus": 20, "to_bus": 21, "length_km": 0.008156, "r_ohm_per_km": 0.1, "x_ohm_per_km": 0.0725, "c_nf_per_km": 0, "max_i_ka": 0.496, "name": "Linea 16"},
+        {"from_bus": 21, "to_bus": 4, "length_km": 0.029312, "r_ohm_per_km": 0.443, "x_ohm_per_km": 0.0755, "c_nf_per_km": 0, "max_i_ka": 0.203, "name": "Linea 17"},
+        {"from_bus": 4, "to_bus": 6, "length_km": 0.028347, "r_ohm_per_km": 0.868, "x_ohm_per_km": 0.086, "c_nf_per_km": 0, "max_i_ka": 0.12, "name": "Linea 18"},
+        {"from_bus": 6, "to_bus": 19, "length_km": 0.033399, "r_ohm_per_km": 0.541, "x_ohm_per_km": 0.297, "c_nf_per_km": 0, "max_i_ka": 0.159, "name": "Linea 19"},
+        {"from_bus": 4, "to_bus": 5, "length_km": 0.047216, "r_ohm_per_km": 0.868, "x_ohm_per_km": 0.086, "c_nf_per_km": 0, "max_i_ka": 0.12, "name": "Linea 20"}
+    ],
+
+    "S_base": 0.1,
+    "Z_base": 1210,
+    "Z_t_real": 48.4,
+    "Z_t_img" : 4.84,
+
+    "transformer_data": [
+        {
+            "bus0": 0,
+            "bus1": 1,
+            "v_nom_0": 11,
+            "v_nom_1": 0.415,
+            "f_nom": 50,
+            "model": "t",
+            "vsc": 4.75,
+            "vscr": 0.4,
+            "pfe": 1,
+            "i0": 0.1,
+            "phase_shift": 150,
+            "x": 48.4,
+            "r": 4.84,
+            "s_nom": 0.1,
+            "tap_side": 1,
+            "tap_neutral": 0,
+            "tap_min": -2,
+            "tap_max": 2,
+            "tap_step": 0.5,
+            "name": "MT/BT Transformer"
+        }
+    ],
+
+    "ext_grid_data": [
+        {
+            "bus_index": 0,
+            "vm_pu": 1.0,
+            "va_degree": 0,
+            "max_p_mw": 3,
+            "max_q_mvar": 3,
+            "name": "External Grid"
+        }
+    ]
+}
