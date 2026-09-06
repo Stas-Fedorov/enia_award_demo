@@ -91,7 +91,9 @@ results/                 reference output figure and metrics
 
 ## Sharing and licensing
 
-No software or data license is asserted by this demo. Before publishing the repository, confirm that the project team has the right to redistribute the network data, daily profile, pretrained model, and derived set-points.
+This repository is licensed under the terms in [LICENSE](LICENSE). It is provided **strictly for demonstration and evaluation**; any other use, reproduction, or distribution requires explicit written permission from the author.
+
+The LICENSE is a legal statement of allowed use. It does not provide technical access control. To prevent third-party access entirely, make the repository private on GitHub.
 
 ## Scope
 

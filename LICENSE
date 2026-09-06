@@ -1,0 +1,18 @@
+ENIA Award Demo – Evaluation and Demonstration License
+
+Copyright (c) 2026 Stas Fedorov and the ENIA project team
+
+All rights reserved.
+
+This repository and all of its contents, including but not limited to source code, data files, trained machine-learning models, configuration files, and documentation (the "Materials"), are provided solely for the purpose of evaluating and demonstrating the ENIA award demo (the "Demonstration Purpose").
+
+You may view, clone, and run the Materials on a single machine only for the Demonstration Purpose. You may not:
+
+- use the Materials, in whole or in part, for any commercial, production, research, or other purpose;
+- modify, adapt, create derivative works from, or reverse engineer the Materials;
+- distribute, share, sublicense, sell, lease, or otherwise make the Materials available to any third party;
+- remove or obscure any copyright or other proprietary notices.
+
+No license, express or implied, is granted for any other use. THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+For permissions beyond the Demonstration Purpose, please contact the repository owner.
